@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/dark_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".Players_2">
+
+        <TextView
+            android:id="@+id/playerOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Player 1"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/playerOneScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/playerOne"
+            app:layout_constraintLeft_toLeftOf="@id/playerOne"
+            app:layout_constraintTop_toBottomOf="@id/playerOne" />
+
+        <TextView
+            android:id="@+id/playerTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:text="Player 2"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/playerTwoScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/playerTwo"
+            app:layout_constraintLeft_toLeftOf="@id/playerTwo"
+            app:layout_constraintTop_toBottomOf="@id/playerTwo" />
+
+        <Button
+            android:id="@+id/index0"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/cw_minne"
+            android:text=""
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/index1"
+            app:layout_constraintTop_toBottomOf="@id/playerOneScore"/>
+
+        <Button
+            android:id="@+id/index1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/cw_minne"
+            android:text=""
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/index0"
+            app:layout_constraintRight_toLeftOf="@id/index2"
+            app:layout_constraintTop_toTopOf="@id/index0" />
+
+        <Button
+            android:id="@+id/index2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/cw_minne"
+            android:text=""
+            android:textColor="@color/dark_background_light"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/index1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/index1" />
+
+        <Button
+            android:id="@+id/index3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/cw_minne"
+            android:text=""
+
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/index4"
+            app:layout_constraintTop_toBottomOf="@id/index0"/>
+
+        <Button
+            android:id="@+id/index4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/cw_minne"
+            android:text=""
+
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/index3"
+            app:layout_constraintRight_toLeftOf="@id/index5"
+            app:layout_constraintTop_toBottomOf="@id/index1" />
+
+        <Button
+            android:id="@+id/index5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/cw_minne"
+            android:text=""
+
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/index4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/index2"/>
+
+        <Button
+            android:id="@+id/index6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/cw_minne"
+            android:text=""
+
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/index7"
+            app:layout_constraintTop_toBottomOf="@id/index3"/>
+
+        <Button
+            android:id="@+id/index7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/cw_minne"
+            android:text=""
+
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/index6"
+            app:layout_constraintRight_toLeftOf="@id/index8"
+            app:layout_constraintTop_toBottomOf="@id/index4"/>
+
+        <Button
+            android:id="@+id/index8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/cw_minne"
+            android:text=""
+
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/index7"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/index5" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#00adb5"
+            android:fontFamily="@font/lobster"
+            android:text="Reset Game"
+            android:textColor="#eeeeee"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/index7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

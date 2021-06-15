@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Instructions_activity"
+    android:orientation="vertical"
+    android:background="@color/dark_background">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="HOW TO PLAY"
+    android:textColor="@color/white"
+    android:layout_weight="0.75"
+    android:textSize="40sp"
+    android:gravity="center_vertical"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1.The player who gets 3 marks consecutive in either\n\t\t1. Row\n\t\tii. Column\n\t\tiii.Along the Diagonal\nwill WIN the round"
+    android:gravity="center"
+    android:textColor="@color/light_grey"
+    android:textSize="20sp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2. Click the reset button to reset the board"
+    android:textSize="20sp"
+    android:textColor="@color/light_grey"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3. Long press it to reset the score"
+    android:textColor="@color/light_grey"
+    android:textSize="20sp"
+    android:layout_weight="1"/>
+</LinearLayout>
